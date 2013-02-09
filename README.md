@@ -46,22 +46,22 @@ Usage: gfm [options]
 
 Options:
 
-  -h, --help                output usage information
+	-h, --help                output usage information
+	-s, --source <path>        source file or directory where the markdown files
+														are localed [.]
 
-  -s, --source <path>       source file or directory where the markdown files
-                            are localed [.]
+	-g, --generate            converts GitHub flavored markdown files to
+														highlighted html
+	-d, --destination <path>  destination file or directory where the html files
+														are generated [. if source is a directory, removed
+														.md and ended in .html if source is a file]
+	-e, --exclude <paths>     excludes files and directories
+	-c, --compact             generates single html files without external
+														resources
 
-  -g, --generate            converts GitHub flavored markdown files to
-                            highlighted html
-  -d, --destination <path>  destination file or directory where the html files
-                            are generated [. if source is a directory, removed
-                            .md and ended in .html if source is a file]
-  -c, --compact             generates single html files without external
-                            resources
-
-  -l, --live                starts a local server to live preview the markdown
-                            files
-  -p, --port <number>       local server port number [4040]
+	-l, --live                starts a local server to live preview the markdown
+														files
+	-p, --port <number>       local server port number [4040]
 ```
 
 Some examples:
@@ -84,6 +84,12 @@ Convert `file.md` to a compacted `file.html` file:
 $ gfm -g -c -s file.md
 ```
 
+Convert `.` and exclude `node_modules` and `test/README.md`:
+
+```
+$ gfm -g -e node_modules,test/README.md
+```
+
 Start a local server with `.` as source directory and port 1234:
 
 ```
@@ -104,6 +110,7 @@ The source can be a directory or a file.
 
 The possible settings are:
 - destination. _String_. The destination file or directory where the html files will be stored. Default is `.`.
+- exclude. _Array_. Array of paths to exclude.
 - compact. _Boolean_. Embeds all the external resources (css and font files) on every html file. A single html file is generated for every markdown file. If the generated html files are not compacted a directory named `res` will be created with all the external dependencies. Default is `false`.
 
 <a name="live"></a>

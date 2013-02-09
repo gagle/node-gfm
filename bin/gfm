@@ -6,7 +6,7 @@ var app = require ("commander");
 var gfm = require ("../lib/gfm");
 
 app
-		.option ("\n-s, --source <path>", " source file or directory where the " +
+		.option ("-s, --source <path>", " source file or directory where the " +
 				"markdown files\n                          are localed [.]\n")
 		.option ("-g, --generate", "converts GitHub flavored markdown files to\n" +
 				"                          highlighted html")
@@ -14,6 +14,10 @@ app
 				"where the html files\n                          are generated [. if " +
 				"source is a directory, removed\n                          .md and " +
 				"ended in .html if source is a file]")
+		.option ("-e, --exclude <paths>", "excludes files and directories",
+				function (v){
+					return v.split (",");
+				})
 		.option ("-c, --compact", "generates single html files without external\n" +
 				"                          resources\n")
 		.option ("-l, --live", "starts a local server to live preview the " +
@@ -29,6 +33,7 @@ gfm.silent = false;
 if (app.generate){
 	gfm.generate (app.source, {
 		destination: app.destination,
+		exclude: app.exclude,
 		compact: app.compact
 	}, function (error){
 		if (error) console.log (error);
