@@ -111,7 +111,7 @@ The source can be a directory or a file.
 The possible settings are:
 - destination. _String_. The destination file or directory where the html files will be stored. Default is `.`.
 - exclude. _Array_. Array of paths to exclude. The paths are relative from the source directory path.
-- compact. _Boolean_. Embeds all the external resources (css and font files) on every html file. A single html file is generated for every markdown file. If the generated html files are not compacted a directory named `res` will be created with all the external dependencies. Default is `false`.
+- compact. _Boolean_. Embeds all the external resources (css and font files) on every html file. A single html file is generated for every markdown file. If the generated html files are not compacted a directory named `gfm_res` will be created with all the external dependencies. Default is `false`.
 
 <a name="live"></a>
 __gfm.live([src][, port])__  
