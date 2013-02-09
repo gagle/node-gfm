@@ -46,22 +46,22 @@ Usage: gfm [options]
 
 Options:
 
-	-h, --help                output usage information
-	-s, --source <path>        source file or directory where the markdown files
-														are localed [.]
+  -h, --help                output usage information
+  -s, --source <path>       source file or directory where the markdown files
+                            are localed [.]
 
-	-g, --generate            converts GitHub flavored markdown files to
-														highlighted html
-	-d, --destination <path>  destination file or directory where the html files
-														are generated [. if source is a directory, removed
-														.md and ended in .html if source is a file]
-	-e, --exclude <paths>     excludes files and directories
-	-c, --compact             generates single html files without external
-														resources
+  -g, --generate            converts GitHub flavored markdown files to
+                            highlighted html
+  -d, --destination <path>  destination file or directory where the html files
+                            are generated [. if source is a directory, removed
+                            .md and ended in .html if source is a file]
+  -e, --exclude <paths>     excludes files and directories
+  -c, --compact             generates single html files without external
+                            resources
 
-	-l, --live                starts a local server to live preview the markdown
-														files
-	-p, --port <number>       local server port number [4040]
+  -l, --live                starts a local server to live preview the markdown
+                            files
+  -p, --port <number>       local server port number [4040]
 ```
 
 Some examples:
