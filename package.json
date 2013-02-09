@@ -1,0 +1,32 @@
+{
+	"name": "gfm",
+	"version": "0.0.1",
+	"description": "Converts GitHub flavored markdown files to html and provides a web editor to live preview",
+	"keywords": ["flavored", "markdown", "github", "generator", "converter",
+			"html", "web", "live", "preview", "editor"],
+	"author": {
+		"name": "Gabriel Llamas",
+		"email": "gaglekas@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Gagle/Node-GFM.git"
+	},
+	"engines": {
+		"node": "*"
+	},
+	"dependencies": {
+		"marked": "0.2.x",
+		"highlight.js": "7.3.x",
+		"error-provider": "*",
+		"commander": "1.1.x"
+	},
+	"bin": {
+    "gfm": "bin/gfm"
+  },
+	"licenses": [{
+		"type": "MIT",
+		"url": "http://www.opensource.org/licenses/mit-license.html"
+	}],
+	"main": "lib/gfm"
+}
