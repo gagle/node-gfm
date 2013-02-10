@@ -14,7 +14,7 @@ You can convert [GitHub flavored markdown](http://github.github.com/github-flavo
 A possible documentation methodology could be to start a local server, a.k.a. your _documentation server_. You can navigate through your project source files and open them to see their content. You can create new markdown files, edit, live preview, save them and save the generated html files. __Therefore, you can edit the documentation via browser and see the html result in real-time.__
 
 <p align="center">
-	![generate](http://image.gxzone.com/images/2/5/2553ea0bb6e.png)
+	<img alt="generate" src="http://image.gxzone.com/images/2/5/2553ea0bb6e.png"/>
 </p>
 
 #### Installation ####
