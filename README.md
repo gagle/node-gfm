@@ -9,7 +9,7 @@ Version: 0.0.1
 
 With this module you can mimic the GitHub documentation style to work in a local machine so you don't need to publish your project to GitHub to have a nice documentation.
 
-You can convert [GitHub flavored markdown](http://github.github.com/github-flavored-markdown/) files to html and start a local server to edit markdown files and preview them in real-time. Hence, you don't need to log to your GitHub account to use their preview tool, you just write your markdown file locally and simply push the project when you're done.
+You can convert [GitHub flavored markdown](http://github.github.com/github-flavored-markdown/) files to html and start a local server to edit and preview them in real-time. Hence, you don't need to authenticate to your GitHub account to use their preview api, you just write your markdown file locally and simply push the project when you're done.
 
 A possible documentation methodology could be to start a local server, a.k.a. your _documentation server_. You can navigate through your project source files and open them to see their content. You can create new markdown files, edit, live preview, save them and save the generated html files. __Therefore, you can edit the documentation via browser and see the html result in real-time.__
 
