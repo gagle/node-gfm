@@ -1,1 +1,1 @@
-#content{padding:50px 0}#content{width:920px;margin:0 auto}.comment+.comment{border-top:0}@font-face{font-family:"Octicons Regular";src:url("data:font/woff;base64,{base64_data}") format("woff");font-style:normal;font-weight:normal;}
+#content{padding:50px 0}#content{width:920px;margin:0 auto}.comment+.comment{border-top:0 !important}@font-face{font-family:"Octicons Regular";src:url("data:font/woff;base64,{base64_data}") format("woff");font-style:normal;font-weight:normal;}
