@@ -118,5 +118,5 @@ __gfm.live([src][, port])__
 TODO
 
 <a name="silent"></a>
-__gfm.silent)__  
+__gfm.silent__  
 If true no messages will be printed to console. Default is true.
