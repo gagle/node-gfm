@@ -119,4 +119,4 @@ TODO
 
 <a name="silent"></a>
 __gfm.silent__  
-If true no messages will be printed to console. Default is true.
+If true no messages will be printed to console. Default is `true`.
