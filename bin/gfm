@@ -6,7 +6,7 @@ var app = require ("commander");
 var gfm = require ("../lib/gfm");
 
 app
-		.option ("-s, --source <path>", " source file or directory where the " +
+		.option ("-s, --source <path>", "source file or directory where the " +
 				"markdown files\n                          are localed [.]\n")
 		.option ("-g, --generate", "converts GitHub flavored markdown files to\n" +
 				"                          highlighted html")
