@@ -84,7 +84,7 @@ Convert `file.md` to a compacted `file.html` file:
 $ gfm -g -c -s file.md
 ```
 
-Convert `.` and exclude `node_modules` and `test/README.md`:
+Generate markdown files located at `.` and exclude `node_modules` and `test/README.md`:
 
 ```
 $ gfm -g -e node_modules,test/README.md
@@ -115,8 +115,8 @@ The possible settings are:
 
 <a name="live"></a>
 __gfm.live([src][, port])__  
-TODO
+TODO, not yet implemented
 
 <a name="silent"></a>
 __gfm.silent__  
-If true no messages will be printed to console. Default is `true`.
+If `true` no messages will be printed to console. Default is `true` if it's used from the API and `false` if it's used from the CLI.
