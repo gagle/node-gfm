@@ -1,0 +1,22 @@
+#content {
+  padding: 50px 0;
+}
+
+#content {
+  width: 920px;
+  margin: 0 auto;
+}
+
+.comment+.comment {
+  border-top: 0 !important;
+}
+
+@font-face {
+  font-family: "octicons";
+  src: url("data:application/vnd.ms-fontobject;base64,{eot}");
+  src: url("data:application/x-font-woff;base64,{woff}") format("woff"),
+			 url("data:application/x-font-ttf;base64,{ttf}") format("truetype"),
+			 url("data:image/svg+xml;base64,{svg}#octicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
